@@ -1,0 +1,90 @@
+<html>
+
+    <head>
+        <title>Графика 3D</title>
+        <h2>Графика 3D</h2>
+        <meta charset="utf-8">
+        <style>
+
+    </style>
+        <div class="checkselect">
+            <fieldset>
+                <legend>Фон:</legend>
+                <label><input type="checkbox" value="1" id="printStars" />Звёзды</label>
+                <label><input type="checkbox" value="2" id="randomColor" />Случайный цвет</label>
+                <label><input type="checkbox" value="3" id="printLight" />2-й источник света</label>
+                <label><input type="checkbox" value="4" id="printLines" />Окружности на фоне</label>
+                <label><input type="checkbox" value="4" id="printShadows" />Тени</label>
+            </fieldset>
+            <fieldset>
+                <legend>Составляющие фигур:</legend>
+                <label> <input type="checkbox" value="1" id="printEdges" />Рёбра</label>
+                <label><input type="checkbox" value="2" id="printPoints" />Точки</label>
+                <label><input type="checkbox" value="3" id="printPolygons" />Полигоны</label>
+                <label><input type="checkbox" value="4" id="printNumbers" />Номера полигонов</label>
+            </fieldset>
+        </div>
+
+        <div class="checkselect">
+            <fieldset>
+                <legend>Выберите одну фигуру:</legend>
+                <label> <input class="figure" type="radio" name="figure" value="1" id="printSphere" />Сфера</label>
+                <label> <input class="figure" type="radio" name="figure" value="2" id="printEllipsoid" />Эллипсоид</label>
+                <label> <input class="figure" type="radio" name="figure" value="3" id="printHyperbolicparaboloid" />Гиперболический
+                    параболоид</label>
+                <label> <input class="figure" type="radio" name="figure" value="4" id="printHyperboliccylinder" />Гиперболический
+                    цилиндр</label>
+                <label> <input class="figure" type="radio" name="figure" value="5" id="printParaboliccylinder" />Параболический
+                    цилиндр</label>
+                <label> <input class="figure" type="radio" name="figure" value="6" id="printEllipticcylinder" />Эллиптический
+                    цилиндр</label>
+                <label> <input class="figure" type="radio" name="figure" value="7" id="printEllipticparaboloid" />Эллиптический
+                    параболоид</label>
+                <label> <input class="figure" type="radio" name="figure" value="8" id="printCone" />Конус</label>
+                <label> <input class="figure" type="radio" name="figure" value="9" id="printBublick" />Бублик</label>
+                <label> <input class="figure" type="radio" name="figure" value="10" id="printSinglecavityhyperboloid" />Однополостный
+                    гиперболоид</label>
+                <label> <input class="figure" type="radio" name="figure" value="11" id="printDoublecavityhyperboloid" />Двухполостный
+                    гиперболоид</label>
+            </fieldset>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js\ui\checkselect.js"></script>
+        <script type="text/javascript" src="js\graph3D\entites\Subject.js"></script>
+        <script type="text/javascript" src="js\graph3D\entites\Point.js"></script>
+        <script type="text/javascript" src="js\graph3D\entites\Light.js"></script>
+        <script type="text/javascript" src="js\graph3D\entites\Edge.js"></script>
+        <script type="text/javascript" src="js\graph3D\entites\Polygon.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Cube.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Sphere.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Ellipsoid.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Hyperbolicparaboloid.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Hyperboliccylinder.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Paraboliccylinder.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Ellipticcylinder.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Ellipticparaboloid.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Cone.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Single-cavityhyperboloid.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Double-cavityhyperboloid.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\bublick.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Donut.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Spiral.js"></script>
+        <script type="text/javascript" src="js\graph3D\surfaces\Spherearbuz.js"></script>
+
+        <div class="canvas">
+            <script type="text/javascript" src="js\Canvas.js"></script>
+        </div>
+        <script type="text/javascript" src="js\graph3D\Math3D.js"></script>
+        <script type="text/javascript" src="js\graph3D\Graph3D.js"></script>
+        <script type="text/javascript" src="js\ui\ui.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/checkselect.css">
+        <link rel="stylesheet" type="text/css" href="css/page.css">
+        <script type="text/javascript" src="js\main.js"></script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

@@ -1,0 +1,12 @@
+h2 {
+    color: blue;
+}
+
+canvas {
+    position: absolute;
+    top: 110px;
+}
+
+body {
+    background-color: rgb(255, 255, 255) ;
+}
